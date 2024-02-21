@@ -1,0 +1,6 @@
+Removing keys from Object using map function
+
+const updatedData = rawDataFromApi.map(item => {
+        const { questionnaire, ...rest } = item;
+        return rest;
+      });
